@@ -380,28 +380,46 @@
     <div class="modal">
         <button type="button" class="modal-open">
             <svg class="modal-close" width="8" height="8">
-                <use href="./images/icons.svg#icon-close-1"></use>
+                <use href="./images/icons.svg#iicon-send-1"></use>
             </svg>
         </button>
-        <h2>Leave your contacts and we will call you back</h2>
-        <div class="modal-content">
+        <p class="modal-text">
+            Leave your contacts and we will call you back
+        </p>
         <form class="modal-form">
-            <label>Name
-            <div class="input-wrapper">
-                <svg class="icon-avatar" width="24" height="24">
-                    <use href="./images/icons.svg#icon-avatar-1"></use>
-                </svg>
-                    <input type="text" placeholder="Your Name">
+            <div class="form-group">
+                <label class="form-label" for="user-name">Name</label>
+                <div class="input-container">
+                    <input class="input-field" id="user-name" name="user-name" type="text">
+                    <svg class="icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-avatar-1"></use>
+                    </svg>
                 </div>
-            </label>
-            <svg class="icon-phone" width="24" height="24">
-                <use href="./images/icons.svg#icon-phone-2"></use>
-            </svg>
-
-            <svg class="icon-email" width="24" height="24">
-                <use href="./images/icons.svg#icon-email-3"></use>
-            </svg>
-        </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="user-phone">Phone</label>
+                <div class="input-container">
+                    <input class="input-field" id="user-phone" name="user-phone" type="tel">
+                    <svg class="icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-phone-2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="user-email">Email</label>
+                <div class="input-container">
+                    <input class="input-field" id="user-email" name="user-email" type="email">
+                    <svg class="icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-email-3"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="user-comment">Comment</label>
+                <div class="input-container">
+                    <input class="input-field" id="user-comment" name="user-comment" type="comment">
+                </div>
+            </div>
         </form>
     </div>
 </div>
