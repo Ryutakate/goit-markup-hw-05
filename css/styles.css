@@ -849,13 +849,24 @@ button {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    color: #f4f4fd;
 }
 
-.visually-hidden:checked .checkbox-icon {
+input:checked+.label-class .checkbox-icon {
     background-color: #404bbf;
-    border: none;
     fill: #F4F4FD;
+    border: none;
+}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .label-privacy-policy {
